@@ -17,4 +17,13 @@ for pair in coordinates:
     print("X:", pair[:,0])
     print("Y:", pair[:,1])
 
+    xcoords = pair[:,0]
+    ycoords = pair[:,1]
+
+    for x in range(xcoords[1] - xcoords[0]):
+        map[x] += 1
+    
+    for y in range(ycoords[1] - ycoords[0]):
+        map[y] += 1
+
 #print(coordinates)
